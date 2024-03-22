@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recept</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+        * {
+            font-family: "Madimi One", sans-serif;
+            font-weight: 400;
+            font-style: norma
+        }
+
+        .textareas h1 {
+            font-size: 21px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.616);
+            transform: rotate(1deg);
+        }
+    </style>
+</head>
+
+<body class="bg-[#ddd]">
+    <main>
+        <div class="container mx-auto flex justify-center items-center">
+            <section class="flex flex-col lg:flex-row gap-20 justify-center items-center h-[100vh]">
+                <div class="">
+                    <div class="">
+                        <div class="flex flex-col bg-white rounded shadow-lg p-12">
+                            <h1 class="text-black text-2xl mb-5">Please Update data here</h1>
+
+                            <label class="font-semibold text-lg mt-3" for="date">Date</label>
+                            <input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]" type="date" name="date" id="date">
+                            <!-- <label class="font-semibold text-lg mt-3" for="date">Expire Date</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="date" name="date" id="exDate"> -->
+                            <label class="font-semibold text-lg mt-3" for="appt">Time</label>
+                            <input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]" type="time" id="time" name="appt">
+
+
+                            <!-- <select name="" id="selectBg" class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select> -->
+                            <button class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700" id="submit">Update</button>
+                                <button class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700" id="timepress">Time Change</button>   
+                        </div>
+                    </div>
+                </div>
+                <div class="right flex justify-center receptBg h-[850px] w-full items-center" id="receptBackground">
+                    <section class="recept w-full h-full relative">
+                        <img class="w-full h-full relative" src="image/1.png" alt="">
+                        <div class="absolute bottom-[282px] left-[421px] textareas">
+
+                            <h1 class="font-semibold text-right">$<span id="firstPrizeChange">750</span>
+                            </h1>
+                            <h1 class="font-semibold text-right mt-6">$<span id="secoundPrizeUpdate">820</span>
+                            </h1>
+                            <h1 class="font-semibold text-right mt-4">$<span id="thirdPrizeChange">920</span>
+                            </h1>
+
+                            <h1 class="font-semibold text-right mt-6"><span class="ml-7"></span>
+                                $<span id="subTotalChange">962</span></h1>
+
+                            <h1 class="font-semibold text-right -mt-2"><span class="mr-4"></span> $<span id="taxChange">48.01</span></h1>
+
+
+
+                            <h1 class="font-semibold text-right mt-2"><span class="mr-4"></span>
+                                $<span id="totalChange">1010.01</span></h1>
+                                <h1 class="font-semibold text-right -mt-2"><span class="mr-4"></span>
+                                    $<span id="cashUpdate">5000</span></h1>
+    
+
+
+                        </div>
+                        <div class="absolute bottom-[498px] left-[252px]">
+                            <h1 class="text-[#101111cf] text-center text-[20px] rotate-1"><span id="dateChange">2024/02/08</span>
+                                <span id="timeChange">7:21 PM</span>
+                            </h1>
+                            <!-- EXPIRES <span id="exDateChange">2024/05/08</span> -->
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
